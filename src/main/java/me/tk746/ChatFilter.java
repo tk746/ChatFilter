@@ -1,5 +1,6 @@
 package me.tk746;
 
+import lombok.Getter;
 import me.tk746.commands.ReloadFilter;
 import me.tk746.events.PlayerChatListner;
 import me.tk746.util.Config;
@@ -9,11 +10,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ChatFilter extends JavaPlugin {
 
+    @Getter
     private static ChatFilter instance;
-
-    public static ChatFilter getInstance() {
-        return instance;
-    }
 
     @Override
     public void onEnable() {
