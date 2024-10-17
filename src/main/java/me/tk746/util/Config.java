@@ -12,6 +12,7 @@ public class Config {
     public static List<String> FILTERS;
     public static boolean ENABLED = true;
     public static String PREFIX;
+    public static String COMMAND;
 
     public static void load() {
         ChatFilter instance = ChatFilter.getInstance();
@@ -32,6 +33,7 @@ public class Config {
         ENABLED = config.getBoolean("chatFilter.enabled");
         FILTERS = config.getStringList("chatFilter.filters");
         PREFIX = config.getString("chatFilter.prefix");
+        COMMAND = config.getString("chatFilter.command");
 
     }
 }

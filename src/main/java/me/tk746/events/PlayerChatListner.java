@@ -1,6 +1,7 @@
 package me.tk746.events;
 
 import me.tk746.util.Config;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -17,6 +18,7 @@ public final class PlayerChatListner implements Listener {
     public void onPlayerChat(PlayerChatEvent e) {
         Player p = e.getPlayer();
 
+
         //get list
         for (String keyword : Config.FILTERS) {
 
@@ -25,6 +27,7 @@ public final class PlayerChatListner implements Listener {
                 //cancel it
                 e.setCancelled(true);
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', PREFIX + "&eYour Message was filtered."));
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), Config.COMMAND.replace("{player}", p.getDisplayName()).replace("{message}", e.getMessage()));
             }
         }
 

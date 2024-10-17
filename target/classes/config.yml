@@ -1,7 +1,11 @@
 chatFilter:
-  prefix: "&7[&a ChatFilter &7]&r "
+  #Enable or disable ChatFilter
   enabled: true
-  #make these lowercase
+  #Prefix for the chat filter
+  prefix: "&7[&a ChatFilter &7]&r "
+  #Use {player} & {message} this will get the players name and the message sentfor logging
+  command: "warn {player} Filtered message: ""{message}"" "
+  #Make these lowercase or else it won't work
   filters:
     - "test"
     - "darn"
