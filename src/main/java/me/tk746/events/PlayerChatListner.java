@@ -26,8 +26,11 @@ public final class PlayerChatListner implements Listener {
             if (e.getMessage().toLowerCase().contains(keyword)) {
                 //cancel it
                 e.setCancelled(true);
+            }
+            if(e.isCancelled()) {
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', PREFIX + "&eYour Message was filtered."));
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), Config.COMMAND.replace("{player}", p.getDisplayName()).replace("{message}", e.getMessage()));
+                break;
             }
         }
 

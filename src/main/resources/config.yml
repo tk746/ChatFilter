@@ -3,8 +3,8 @@ chatFilter:
   enabled: true
   #Prefix for the chat filter
   prefix: "&7[&a ChatFilter &7]&r "
-  #Use {player} & {message} this will get the players name and the message sentfor logging
-  command: "warn {player} Filtered message: ""{message}"" "
+  #Use {player} & {message} this will get the players name and the message sent for logging
+  command: "warn {player} Filtered message: {message} "
   #Make these lowercase or else it won't work
   filters:
     - "test"
