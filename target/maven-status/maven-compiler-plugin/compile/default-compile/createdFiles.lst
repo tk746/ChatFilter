@@ -1,0 +1,5 @@
+me\tk746\util\Utils.class
+me\tk746\util\Config.class
+me\tk746\events\PlayerChatListner.class
+me\tk746\commands\ReloadFilter.class
+me\tk746\ChatFilter.class

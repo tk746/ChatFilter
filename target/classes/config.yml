@@ -1,0 +1,7 @@
+chatFilter:
+  prefix: "&7[&a ChatFilter &7]&r "
+  enabled: true
+  #make these lowercase
+  filters:
+    - "test"
+    - "darn"

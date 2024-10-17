@@ -1,0 +1,12 @@
+name: ChatFilter
+version: 1.0-SNAPSHOT
+description: Learning Java & spigot Dev - tk746
+main: me.tk746.ChatFilter
+author: Tk746
+# Dont Edit
+api-version: 1.13
+#Commands
+commands:
+  reloadfilter:
+    description: "Reload Filter"
+    permission: chatfilter.reload

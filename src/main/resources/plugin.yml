@@ -1,0 +1,12 @@
+name: ${project.name}
+version: ${project.version}
+description: Learning Java & spigot Dev - tk746
+main: ${main.class}
+author: ${author}
+# Dont Edit
+api-version: 1.13
+#Commands
+commands:
+  reloadfilter:
+    description: "Reload Filter"
+    permission: chatfilter.reload
