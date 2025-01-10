@@ -33,6 +33,15 @@ public final class ChatFilter extends JavaPlugin {
         //start message for logging
         Utils.logColor("&a-------- ChatFilter STARTED --------");
         Utils.logColor("&a-------- Made by Tk746 --------");
+
+
+        //check for depends
+
+        //check for softdepends
+//        if (getServer().getPluginManager().getPlugin("DiscordSRV")!=null) {
+//            Utils.logColor("&aDiscordSRV Plugin found! . . . Hooking in!");
+//        }
+        Utils.logColor("&a-------- --------  --------");
     }
 
     public void onReload() {

@@ -20,6 +20,12 @@
     <!-- Repo's -->
     <repositories>
 
+        <!-- discordsrv -->
+        <repository>
+            <id>Scarsz-Nexus</id>
+            <url>https://nexus.scarsz.me/content/groups/public/</url>
+        </repository>
+
         <!-- This adds the Spigot Maven repository to the build -->
         <repository>
             <id>spigot-repo</id>
@@ -30,6 +36,14 @@
 
     <!-- Depends -->
     <dependencies>
+
+        <!-- DiscordSRV -->
+        <dependency>
+            <groupId>com.discordsrv</groupId>
+            <artifactId>discordsrv</artifactId>
+            <version>1.28.0</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!--This adds the Spigot API artifact to the build -->
         <dependency>
